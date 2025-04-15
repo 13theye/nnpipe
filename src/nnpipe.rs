@@ -6,7 +6,7 @@ use nannou::prelude::*;
 use nannou::wgpu;
 
 #[allow(dead_code)]
-pub struct Nnpipeline {
+pub struct Nnpipe {
     // Textures for the pipeline
     pub scene_texture: wgpu::Texture,
     pub brightness_texture: wgpu::Texture,
@@ -55,7 +55,7 @@ pub struct Nnpipeline {
     intensity_curve_buffer: wgpu::Buffer,
 }
 
-impl Nnpipeline {
+impl Nnpipe {
     pub fn new(device: &wgpu::Device, width: u32, height: u32, samples: u32) -> Self {
         // Create textures
         let scene_texture = create_render_texture(device, width, height, samples);

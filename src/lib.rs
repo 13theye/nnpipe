@@ -1,2 +1,2 @@
-pub mod nnpipeline;
-pub use nnpipeline::Nnpipeline;
+pub mod nnpipe;
+pub use nnpipe::Nnpipe;

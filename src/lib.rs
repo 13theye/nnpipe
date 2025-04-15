@@ -1,2 +1,2 @@
-pub mod nnpipe;
+mod nnpipe;
 pub use nnpipe::*;

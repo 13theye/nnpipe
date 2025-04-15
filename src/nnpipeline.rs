@@ -1,4 +1,4 @@
-// src/post/post_processing.rs
+// src/nnpipeline.rs
 //
 // Texture rendering and post-processing
 
@@ -6,7 +6,7 @@ use nannou::prelude::*;
 use nannou::wgpu;
 
 #[allow(dead_code)]
-pub struct Nnpipe {
+pub struct Nnpipeline {
     // Textures for the pipeline
     pub scene_texture: wgpu::Texture,
     pub brightness_texture: wgpu::Texture,
@@ -55,7 +55,7 @@ pub struct Nnpipe {
     intensity_curve_buffer: wgpu::Buffer,
 }
 
-impl Nnpipe {
+impl Nnpipeline {
     pub fn new(device: &wgpu::Device, width: u32, height: u32, samples: u32) -> Self {
         // Create textures
         let scene_texture = create_render_texture(device, width, height, samples);

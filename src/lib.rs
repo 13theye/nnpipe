@@ -1,1 +1,1 @@
-pub mod nnpipe;
+pub mod nnpipeline;

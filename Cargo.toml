@@ -8,3 +8,7 @@ edition = "2021"
 nannou = "0.19"
 wgpu-types = "0.17.0"
 bytemuck = "1.13.1"
+
+[lib]
+name = "nnpipe"
+path = "src/nnpipe.rs"

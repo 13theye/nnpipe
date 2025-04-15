@@ -754,3 +754,5 @@ fn create_render_pipeline(
         multiview: None,
     })
 }
+
+pub fn main() {}

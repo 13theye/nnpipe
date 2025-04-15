@@ -1,0 +1,14 @@
+[package]
+name = "nnpipe"
+authors = ["13th Eye <jjhh@13theye.com"]
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+nannou = "0.19"
+wgpu-types = "0.17.0"
+bytemuck = "1.13.1"
+
+[lib]
+name = "nnpipe"
+path = "src/lib.rs"
